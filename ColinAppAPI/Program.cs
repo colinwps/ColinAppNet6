@@ -1,4 +1,8 @@
+using NLog.Web;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.AddLog4Net("XmlConfig/log4net.config");
+//builder.Logging.AddNLog("XmlConfig/NLog.config");
 
 // Add services to the container.
 
